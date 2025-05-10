@@ -65,10 +65,11 @@ public class AdminUsersPage {
 		}
 	}
 	
-	public void lockNewUser() {
-		List<WebElement> table = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td"));
-		for (int i = 0; i < table.size(); i++) {
-			if (table.get(i).getText().equals("TestNewUser")) {
+	/*public void lockNewUser() {
+		List<WebElement> table2 = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td"));
+		String msg = "TestNewUser";
+		for (int i = 0; i < table2.size(); i++) {
+			if (table2.get(i).getText().equals(msg)) {
 				WebElement statusAction = driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[5]//i[@class='fa fa-unlock']"));
 				statusAction.click();
 				WebElement status = driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[3]//a//span"));
@@ -79,6 +80,6 @@ public class AdminUsersPage {
 	
 	public String getNewUserLockAlertString() {
 		return createNewUserLockAlert.getText();
-	}
+	}*/
 }	
 

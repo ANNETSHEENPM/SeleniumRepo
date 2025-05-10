@@ -27,7 +27,7 @@ public class LoginPageTest extends BaseClass {
 	
 	@DataProvider(name = "invalid credentials")
 	 public Object[][] dpMethod() {
-		return new Object[][] {{"Admin","Admin"}, {"admin","Admin"},{"Admin","admin"}};
+		return new Object[][] {{"Admin","Admin"}, {"admin","Admin"},{"Admin","AdMiN"}};
 	  }
 	
 	@Test(dataProvider = "invalid credentials")

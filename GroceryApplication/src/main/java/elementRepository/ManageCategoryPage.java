@@ -70,7 +70,7 @@ public class ManageCategoryPage {
 		gu.pageScroll(0, 1000, driver);
 		wu.waitForElementToBeClickable(driver, saveCategory, 10);
 		gu.clickJavaScriptExecutor(saveCategory, driver);
-		saveCategory.click();
+		//saveCategory.click();
 	}
 
 	public String getCategoryAlertString() {
@@ -97,7 +97,7 @@ public class ManageCategoryPage {
 		gu.pageScroll(0, 1000, driver);
 		wu.waitForElementToBeClickable(driver, updateCategory, 10);
 		gu.clickJavaScriptExecutor(updateCategory, driver);
-		updateCategory.click();
+		//updateCategory.click();
 	}
 
 	public String getupdateCategoryAlertString() {
@@ -107,7 +107,7 @@ public class ManageCategoryPage {
 	public void statusUpdatedCategory() {
 		List<WebElement> tableName = driver
 				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
-		String message2 = "Test New Category Update";
+		String message2 = "Test New Category";
 		for (int i = 0; i < tableName.size(); i++) {
 			if (tableName.get(i).getText().equals(message2)) {
 				String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[\"+(i+1)+\"]//td[3]//a//span";
@@ -121,7 +121,7 @@ public class ManageCategoryPage {
 	public void deleteNewCategory() {
 		List<WebElement> tableName = driver
 				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
-		String message2 = "Test New Category Update";
+		String message2 = "Test New Category";
 		for (int i = 0; i < tableName.size(); i++) {
 			if (tableName.get(i).getText().equals(message2)) {
 				String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[\"+(i+1)+\"]//td[4]//a//i[@class='fas fa-trash-alt']";
@@ -150,5 +150,8 @@ public class ManageCategoryPage {
 				break;
 			}
 		}
+		String urlactual = driver.getCurrentUrl();
+		gu.clickJavaScriptExecutor(resetButton, driver);
+		//resetButton.click();
 	}	
 }

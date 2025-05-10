@@ -57,7 +57,8 @@ public class ManageMenuPage {
 	    setHome.click();
 	    gu.pageScroll(0, 1000, driver);
 		wu.waitForElementToBeClickable(driver, buttonSave, 10);
-	    buttonSave.click();  
+		gu.clickJavaScriptExecutor(buttonSave, driver);
+	   // buttonSave.click();  
 	}
 	public String getNewMenuAlertString() {
 		return createNewMenuAlert.getText();

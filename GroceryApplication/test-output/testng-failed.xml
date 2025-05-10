@@ -8,13 +8,13 @@
   <test thread-count="1" parallel="tests" name="Chrome Test(failed)">
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testCase.ManageMenuTest">
+      <class name="testCase.AdminUsersTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="verifyAlertWhenNewMenuIsCreated"/>
           <include name="afterMethod"/>
+          <include name="verifyAlerWhenNewAdminUserIsLocked"/>
         </methods>
-      </class> <!-- testCase.ManageMenuTest -->
+      </class> <!-- testCase.AdminUsersTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [GroceryApplication] -->
