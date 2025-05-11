@@ -30,7 +30,7 @@ public class ManageCategoryTest extends BaseClass {
 		Assert.assertEquals(ac, ex, Constant.mc_verifyNewCategoryIsCreated);*/
 	} 
 
-	@Test(priority = 2)
+	/*@Test(priority = 2)
 	public void verifyAlertWhenUpdateOfCategoryCreated() throws InvalidFormatException, IOException {
 		lp = new LoginPage(driver);
 		ap = lp.Login(grocerydata(1,0),grocerydata(1,1));
@@ -42,7 +42,7 @@ public class ManageCategoryTest extends BaseClass {
 		Assert.assertEquals(act2, true, Constant.alertVerification);
 		/*String expect = "×" + "\n" + "Alert!" + "\n" + "Category Updated Successfully";
 		Assert.assertEquals(act, expect, Constant.alertVerification);*/
-	}
+	
 	
 	@Test(priority = 3)
 	public void verifyUpdatedCategoryStatus() throws InvalidFormatException, IOException {

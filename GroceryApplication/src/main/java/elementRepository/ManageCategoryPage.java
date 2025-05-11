@@ -107,7 +107,7 @@ public class ManageCategoryPage {
 	public void statusUpdatedCategory() {
 		List<WebElement> tableName = driver
 				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
-		String message2 = "Test New Category Update";
+		String message2 = "Test New Category";
 		for (int i = 0; i < tableName.size(); i++) {
 			if (tableName.get(i).getText().equals(message2)) {
 				String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[\"+(i+1)+\"]//td[3]//a//span";
@@ -121,7 +121,7 @@ public class ManageCategoryPage {
 	public void deleteNewCategory() {
 		List<WebElement> tableName = driver
 				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
-		String message2 = "Test New Category Update";
+		String message2 = "Test New Category";
 		for (int i = 0; i < tableName.size(); i++) {
 			if (tableName.get(i).getText().equals(message2)) {
 				String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[\"+(i+1)+\"]//td[4]//a//i[@class='fas fa-trash-alt']";
