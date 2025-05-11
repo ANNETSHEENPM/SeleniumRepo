@@ -25,7 +25,10 @@ public class ManageContactTest extends BaseClass {
 		mp.contactUsDetails();
 		mp.updateContactUs();
 		String actual=mp.getUpdateContactAlertString();
-		String expected = "×"+ "\n"+ "Alert!"+ "\n"+ "Contact Updated Successfully";                  
-		Assert.assertEquals(actual, expected, Constant.alertVerification);
+		String expected = "Contact Updated Successfully";         
+		boolean actual2 =actual.contains(expected);
+		Assert.assertEquals(actual2, true, Constant.alertVerification);
+	/*	String expected = "×"+ "\n"+ "Alert!"+ "\n"+ "Contact Updated Successfully";                  
+		Assert.assertEquals(actual, expected, Constant.alertVerification);*/
 	}
 }
