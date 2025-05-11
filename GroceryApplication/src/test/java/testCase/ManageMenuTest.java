@@ -27,7 +27,7 @@ public class ManageMenuTest extends BaseClass {
 		String actual=mm.getNewMenuAlertString();
 		/*String expected = "×"+ "\n"+ "Alert!"+ "\n"+ "Menu Created Successfully";         
 		Assert.assertEquals(actual, expected, Constant.alertVerification);*/
-		String expected = "The Category field is required.";         
+		String expected = "Menu Created Successfully";         
 		boolean actual2 =actual.contains(expected);
 		Assert.assertEquals(actual2, true, Constant.alertVerification);
   }
