@@ -45,8 +45,7 @@ public class ManageContactPage {
 	}
 
 	public void updateContactUs() {
-		List<WebElement> tableName = driver
-				.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
+		List<WebElement> tableName = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
 		String phoneNo = "(634) 897-9509";
 		for (int i = 0; i < tableName.size(); i++) {
 			if (tableName.get(i).getText().equals(phoneNo)) {
