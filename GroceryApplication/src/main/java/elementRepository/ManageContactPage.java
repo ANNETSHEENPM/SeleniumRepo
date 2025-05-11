@@ -46,15 +46,12 @@ public class ManageContactPage {
 
 	public void updateContactUs() {
 		List<WebElement> tableName = driver.findElements(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tr//td[1]"));
-		String phoneNo = "(634) 897-9509";
 		for (int i = 0; i < tableName.size(); i++) {
-			if (tableName.get(i).getText().equals(phoneNo)) {
 				String locator = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[1]//td[6]//a//i[@class='fas fa-edit']";
 				WebElement element1 = driver.findElement(By.xpath(locator));
 				element1.click();
 				break;
 			}
-		}
 		phone.clear();
 		phone.sendKeys(fu.generateRandomDigits(10));
 		gu.pageScroll(0, 500, driver);
