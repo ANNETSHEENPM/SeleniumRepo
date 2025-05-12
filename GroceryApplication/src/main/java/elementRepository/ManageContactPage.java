@@ -55,7 +55,7 @@ public class ManageContactPage {
 		phone.clear();
 		phone.sendKeys(fu.generateRandomDigits(10));
 		gu.pageScroll(0, 500, driver);
-		wu.waitForElementToBeClickable(driver, phone, 5);
+		wu.waitForElementToBeClickable(driver, phone, 15);
 		update.click();
 	}
 
