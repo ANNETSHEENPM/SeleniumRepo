@@ -95,7 +95,7 @@ public class ManageCategoryPage {
 		trash.click();
 		driver.switchTo().alert().accept();
 		gu.pageScroll(0, 1000, driver);
-		wu.waitForElementToBeClickable(driver, updateCategory, 10);
+		wu.waitForElementToBeClickable(driver, updateCategory, 25);
 		gu.clickJavaScriptExecutor(updateCategory, driver);
 		//updateCategory.click();
 	}
