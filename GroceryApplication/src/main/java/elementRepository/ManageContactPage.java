@@ -56,7 +56,8 @@ public class ManageContactPage {
 		phone.sendKeys(fu.generateRandomDigits(10));
 		gu.pageScroll(0, 500, driver);
 		wu.waitForElementToBeClickable(driver, phone, 65);
-		update.click();
+		gu.clickJavaScriptExecutor(update, driver);
+		//update.click();
 	}
 
 	public String getUpdateContactAlertString() {
