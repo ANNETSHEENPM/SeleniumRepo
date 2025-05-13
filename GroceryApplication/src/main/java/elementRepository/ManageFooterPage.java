@@ -18,16 +18,12 @@ public class ManageFooterPage {
 	
 	@FindBy(xpath = "//textarea[@id='content']")
 	WebElement addressField;
-	
 	@FindBy(xpath = "//input[@id='email']")
 	WebElement emailField;
-	
 	@FindBy(xpath = "//input[@id='phone']")
 	WebElement phoneNoField;
-	
 	@FindBy(xpath = "//button[@name='Update']")
 	WebElement footerUpdate;
-	
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement updateFooterTextAlert;
 	

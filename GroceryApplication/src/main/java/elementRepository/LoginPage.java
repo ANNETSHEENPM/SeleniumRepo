@@ -16,13 +16,10 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//input[@placeholder='Username']")
 	WebElement userNameField;
-	
 	@FindBy(xpath = "//input[@placeholder='Password']")
 	WebElement passwordField;
-	
 	@FindBy(xpath = "//button[text()='Sign In']")
 	WebElement signIn;
-	
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
 	WebElement errorMessage;
 	
